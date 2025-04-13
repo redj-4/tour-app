@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+//already set Error state to null, so it can be used to check if an error occurred during the fetch process.
 const TourCard = ({ id, name, info, price, image, onRemove }) => {  // Props destructuring
     const [readMore, setReadMore] = useState(false); // UseState hook to manage the readMore state
     // readMore state determines whether to show full info or a truncated version

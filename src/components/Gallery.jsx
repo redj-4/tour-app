@@ -7,6 +7,7 @@ const Gallery = ({ tours, setTours, onRemove }) => {
     const [loading, setLoading] = useState(true);
     // State to capture any errors that occur during the fetch process.
     const [error, setError] = useState(null);
+    //Already set the error state to null, so it can be used to check if an error occurred during the fetch process.
 
     // Async function to retrieve tour data from the API.
     const fetchTours = async () => {
