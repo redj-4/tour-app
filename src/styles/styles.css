@@ -1,0 +1,100 @@
+/* Personal Responsive Styles */
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Updated font stack for a modern look */
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2d; /* A deep, dark blue-gray for a refined vibe */
+    color: #f5f5f5; /* Soft off-white text for comfortable contrast */
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Added extra vertical padding for breathing room */
+    text-align: center;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Using gap for consistent spacing between tour cards */
+    padding: 20px;
+}
+
+/* Tour Card Styling */
+.tour-card {
+    background-color: #4a148c; /* A deep purple that stands out with personality */
+    border-radius: 12px; /* Slightly larger radius for a softer look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for added depth */
+    margin: 20px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    width: 380px;
+    overflow: hidden;
+    min-height: 420px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover effect for Tour Card */
+.tour-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Price Styling */
+.tour-header h4 {
+    font-size: 22px;
+    color: #b0bec5; /* A soft gray-blue for a modern accent */
+    text-align: center;
+}
+
+/* Tour Card Image Styling */
+.tour-card img {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover; /* Cover fills the container with a more dynamic crop */
+    overflow: hidden;
+}
+
+/* Read More Button Styling */
+.read-more {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Not Interested Button Styling */
+.not-interested {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #d32f2f; /* A bold red for actionable emphasis */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tour-card {
+        width: 90%;
+    }
+}
